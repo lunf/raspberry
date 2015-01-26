@@ -32,6 +32,9 @@ public class MobileAccount {
 	@ApiModelProperty(value = "The addresses that associated with the account", notes = "", required = false)
 	private List<MobileAccountAddress> accountAddresses;
 
+	@ApiModelProperty(value = "The company of the account", notes = "", required = false)
+	private String company;
+
 	public String getUsername() {
 		return username;
 	}
@@ -94,6 +97,14 @@ public class MobileAccount {
 
 	public void setAccountAddresses(List<MobileAccountAddress> accountAddresses) {
 		this.accountAddresses = accountAddresses;
+	}
+
+	public String getCompany() {
+		return company;
+	}
+
+	public void setCompany(String company) {
+		this.company = company;
 	}
 
 }
