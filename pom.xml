@@ -17,7 +17,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 
-		<org.springframework-version>4.1.4.RELEASE</org.springframework-version>
+		<org.springframework-version>4.0.7.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		<org.slf4j-version>1.6.6</org.slf4j-version>
 		<log4j-version>1.2.15</log4j-version>
@@ -26,6 +26,10 @@
 		<javax.servlet.jsp-version>2.1</javax.servlet.jsp-version>
 		<javax.servlet.jstl-version>1.2</javax.servlet.jstl-version>
 		<com.knappsack-version>0.3.5</com.knappsack-version>
+		<com.mysema.querydsl-version>3.6.0</com.mysema.querydsl-version>
+		<org.springframework.data-version>1.7.1.RELEASE</org.springframework.data-version>
+		<org.hibernate-version>4.3.8.Final</org.hibernate-version>
+		
 		<!-- JUnit -->
 		<junit-version>4.9</junit-version>
 	</properties>
@@ -100,6 +104,18 @@
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-jdbc</artifactId>
 				<version>${org.springframework-version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-jpa</artifactId>
+				<version>${org.springframework.data-version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-entitymanager</artifactId>
+				<version>${org.hibernate-version}</version>
 			</dependency>
 
 
@@ -177,6 +193,18 @@
 				<groupId>javax.servlet</groupId>
 				<artifactId>jstl</artifactId>
 				<version>${javax.servlet.jstl-version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.mysema.querydsl</groupId>
+				<artifactId>querydsl-apt</artifactId>
+				<version>${com.mysema.querydsl-version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.mysema.querydsl</groupId>
+				<artifactId>querydsl-jpa</artifactId>
+				<version>${com.mysema.querydsl-version}</version>
 			</dependency>
 
 			<!-- Test -->
