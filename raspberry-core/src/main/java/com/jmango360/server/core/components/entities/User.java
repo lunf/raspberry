@@ -8,7 +8,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity
+import com.jmango360.server.model.MobileAccount;
+
+@Entity(name="ra_user")
 public class User extends BaseEntity {
 
 	private static final long serialVersionUID = 5334663508635491543L;
@@ -60,6 +62,16 @@ public class User extends BaseEntity {
 		this.firstName = firstName;
 		this.lastName = lastName;
 
+		activationCode = UUID.randomUUID().toString();
+	}
+	
+	public User(MobileAccount mobileAccount) {
+		this.username = mobileAccount.getUsername();
+		this.password = mobileAccount.getPassword();
+		this.email = mobileAccount.getEmail().toLowerCase().trim();
+		this.firstName = mobileAccount.getFirstName();
+		this.lastName = mobileAccount.getLastName();
+		
 		activationCode = UUID.randomUUID().toString();
 	}
 

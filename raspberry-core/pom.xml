@@ -22,6 +22,12 @@
 
 
 	<dependencies>
+		<!-- Sub module -->
+		<dependency>
+			<groupId>com.jmango360.server</groupId>
+			<artifactId>raspberry-model</artifactId>
+		</dependency>
+
 		<!-- Spring and Transactions -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -41,6 +47,22 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.jolbox</groupId>
+			<artifactId>bonecp</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-ehcache</artifactId>
 		</dependency>
 
 		<dependency>

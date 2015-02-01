@@ -29,6 +29,9 @@
 		<com.mysema.querydsl-version>3.6.0</com.mysema.querydsl-version>
 		<org.springframework.data-version>1.7.1.RELEASE</org.springframework.data-version>
 		<org.hibernate-version>4.3.8.Final</org.hibernate-version>
+		<com.jolbox-version>0.8.0.RELEASE</com.jolbox-version>
+		<org.postgresql-version>9.3-1102-jdbc41</org.postgresql-version>
+		<org.aspectj-version>1.8.4</org.aspectj-version>
 		
 		<!-- JUnit -->
 		<junit-version>4.9</junit-version>
@@ -115,6 +118,12 @@
 			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-entitymanager</artifactId>
+				<version>${org.hibernate-version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-ehcache</artifactId>
 				<version>${org.hibernate-version}</version>
 			</dependency>
 
@@ -205,6 +214,24 @@
 				<groupId>com.mysema.querydsl</groupId>
 				<artifactId>querydsl-jpa</artifactId>
 				<version>${com.mysema.querydsl-version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.jolbox</groupId>
+				<artifactId>bonecp</artifactId>
+				<version>${com.jolbox-version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.postgresql</groupId>
+				<artifactId>postgresql</artifactId>
+				<version>${org.postgresql-version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.aspectj</groupId>
+				<artifactId>aspectjweaver</artifactId>
+				<version>${org.aspectj-version}</version>
 			</dependency>
 
 			<!-- Test -->

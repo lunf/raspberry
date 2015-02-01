@@ -1,3 +1,6 @@
 raspberry-core/target
 raspberry-model/target
 raspberry-web/target
+raspberry-web/.settings/
+raspberry-core/.settings/
+raspberry-model/.settings/
