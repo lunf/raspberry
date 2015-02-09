@@ -1,4 +1,4 @@
-package com.jmango360.server.core.components.repositories;
+package com.jmango360.server.core.components.repositories.jpa;
 
 import java.util.List;
 

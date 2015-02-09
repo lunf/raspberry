@@ -63,5 +63,6 @@
 	</beans:bean>
 	
 	 <beans:import resource="classpath:/spring/jpa-context.xml"/>
+	 <beans:import resource="classpath:/spring/mongo-context.xml"/>
 
 </beans:beans>
