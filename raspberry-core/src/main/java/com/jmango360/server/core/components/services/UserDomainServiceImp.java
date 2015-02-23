@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.jmango360.server.core.components.entities.User;
-import com.jmango360.server.core.components.repositories.jpa.UserRespository;
+import com.jmango360.server.core.components.repositories.jpa.UserRepository;
 import com.jmango360.server.model.MobileAccount;
 
 @Transactional(propagation = Propagation.REQUIRED)
@@ -19,7 +19,7 @@ public class UserDomainServiceImp implements UserDomainService {
 			.getLogger(UserDomainServiceImp.class);
 
 	@Autowired
-	private UserRespository userRespository;
+	private UserRepository userRespository;
 
 	@Override
 	public void add(MobileAccount entity) {
